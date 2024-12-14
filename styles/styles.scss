@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Coustard';
-    src: url('../font/Coustard-Black.woff') format('woff');
+    src: url('../assets/font/Coustard-Black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -17,4 +17,6 @@ h1{
     font-weight: 900;
     margin: 0;
 }
+
+.selected {background: rgb(199, 255, 221)}
     

@@ -1,0 +1,1402 @@
+{
+  "675dca14fc13ae0f22e1c26f":{
+    "name": "Workshop Local",
+    "start_time": "2023-08-03T12:01:00",
+    "end_time": "2023-08-03T15:01:00",
+    "address": 13,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c270":{
+    "name": "Film Screening International",
+    "start_time": "2022-03-21T09:16:00",
+    "end_time": "2022-03-21T13:16:00",
+    "address": 11,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c271":{
+    "name": "Theater Play Seminar",
+    "start_time": "2024-09-19T11:53:00",
+    "end_time": "2024-09-19T15:53:00",
+    "address": 8,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c272":{
+    "name": "Yoga Retreat Exhibition",
+    "start_time": "2023-07-04T15:39:00",
+    "end_time": "2023-07-04T19:39:00",
+    "address": 9,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c273":{
+    "name": "Music Concert Rising Star",
+    "start_time": "2024-06-19T10:32:00",
+    "end_time": "2024-06-19T12:32:00",
+    "address": 13,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c274":{
+    "name": "Literature Symposium Startup",
+    "start_time": "2024-03-09T14:15:00",
+    "end_time": "2024-03-09T17:15:00",
+    "address": 15,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c275":{
+    "name": "Music Concert Virtual",
+    "start_time": "2023-09-11T12:52:00",
+    "end_time": "2023-09-11T15:52:00",
+    "address": 5,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c276":{
+    "name": "Theater Play Conference",
+    "start_time": "2024-10-20T18:16:00",
+    "end_time": "2024-10-20T21:16:00",
+    "address": 15,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c277":{
+    "name": "Workshop Retreat",
+    "start_time": "2023-02-02T17:15:00",
+    "end_time": "2023-02-02T19:15:00",
+    "address": 15,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c278":{
+    "name": "Theater Play Sustainability",
+    "start_time": "2023-09-16T15:30:00",
+    "end_time": "2023-09-16T17:30:00",
+    "address": 0,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c279":{
+    "name": "Political Rally Tech",
+    "start_time": "2022-05-08T18:59:00",
+    "end_time": "2022-05-08T20:59:00",
+    "address": 7,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c27a":{
+    "name": "Political Debate Webinar",
+    "start_time": "2022-10-27T10:04:00",
+    "end_time": "2022-10-27T12:04:00",
+    "address": 2,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c27b":{
+    "name": "Art Exhibition Cultural",
+    "start_time": "2023-10-28T13:49:00",
+    "end_time": "2023-10-28T15:49:00",
+    "address": 11,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c27c":{
+    "name": "Tech Talk International",
+    "start_time": "2022-10-31T17:24:00",
+    "end_time": "2022-10-31T19:24:00",
+    "address": 12,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c27d":{
+    "name": "Dance Performance Summit",
+    "start_time": "2022-11-28T15:07:00",
+    "end_time": "2022-11-28T18:07:00",
+    "address": 2,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c27e":{
+    "name": "Food Festival Startup",
+    "start_time": "2024-12-07T18:42:00",
+    "end_time": "2024-12-07T20:42:00",
+    "address": 5,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c27f":{
+    "name": "Theater Play Online",
+    "start_time": "2022-06-24T11:50:00",
+    "end_time": "2022-06-24T14:50:00",
+    "address": 7,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c280":{
+    "name": "Charity Auction Political Campaign",
+    "start_time": "2023-01-04T10:16:00",
+    "end_time": "2023-01-04T13:16:00",
+    "address": 15,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c281":{
+    "name": "Community Gathering Seminar",
+    "start_time": "2022-02-27T12:36:00",
+    "end_time": "2022-02-27T15:36:00",
+    "address": 13,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c282":{
+    "name": "Workshop Festival",
+    "start_time": "2023-01-29T13:18:00",
+    "end_time": "2023-01-29T15:18:00",
+    "address": 8,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c283":{
+    "name": "Workshop Global",
+    "start_time": "2022-02-07T13:09:00",
+    "end_time": "2022-02-07T17:09:00",
+    "address": 6,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c284":{
+    "name": "Sports Tournament Gala",
+    "start_time": "2024-06-04T11:19:00",
+    "end_time": "2024-06-04T13:19:00",
+    "address": 5,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c285":{
+    "name": "Code Jam Live",
+    "start_time": "2022-12-05T15:21:00",
+    "end_time": "2022-12-05T18:21:00",
+    "address": 12,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c286":{
+    "name": "Science Fair Exhibition",
+    "start_time": "2024-07-28T15:16:00",
+    "end_time": "2024-07-28T19:16:00",
+    "address": 15,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c287":{
+    "name": "Community Gathering Workshop",
+    "start_time": "2022-02-06T14:46:00",
+    "end_time": "2022-02-06T18:46:00",
+    "address": 6,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c288":{
+    "name": "Science Fair Seminar",
+    "start_time": "2022-08-04T16:39:00",
+    "end_time": "2022-08-04T20:39:00",
+    "address": 6,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c289":{
+    "name": "Hackathon Hackathon",
+    "start_time": "2023-03-16T10:55:00",
+    "end_time": "2023-03-16T12:55:00",
+    "address": 11,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c28a":{
+    "name": "Code Jam Seminar",
+    "start_time": "2024-10-28T11:35:00",
+    "end_time": "2024-10-28T13:35:00",
+    "address": 2,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c28b":{
+    "name": "Charity Auction Rising Star",
+    "start_time": "2024-09-04T14:14:00",
+    "end_time": "2024-09-04T17:14:00",
+    "address": 2,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c28c":{
+    "name": "Code Jam Classical",
+    "start_time": "2024-10-25T14:14:00",
+    "end_time": "2024-10-25T16:14:00",
+    "address": 4,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c28d":{
+    "name": "Film Screening Conference",
+    "start_time": "2024-03-15T09:40:00",
+    "end_time": "2024-03-15T13:40:00",
+    "address": 14,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c28e":{
+    "name": "Political Rally International",
+    "start_time": "2023-01-15T12:15:00",
+    "end_time": "2023-01-15T16:15:00",
+    "address": 5,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c28f":{
+    "name": "Political Debate 2024",
+    "start_time": "2023-04-23T17:27:00",
+    "end_time": "2023-04-23T21:27:00",
+    "address": 13,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c290":{
+    "name": "Film Screening Networking",
+    "start_time": "2023-04-16T15:49:00",
+    "end_time": "2023-04-16T18:49:00",
+    "address": 5,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c291":{
+    "name": "Yoga Retreat Cultural",
+    "start_time": "2022-08-16T14:07:00",
+    "end_time": "2022-08-16T18:07:00",
+    "address": 1,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c292":{
+    "name": "Film Screening Rising Star",
+    "start_time": "2022-09-27T14:54:00",
+    "end_time": "2022-09-27T17:54:00",
+    "address": 5,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c293":{
+    "name": "Art Exhibition Digital",
+    "start_time": "2024-12-12T11:29:00",
+    "end_time": "2024-12-12T14:29:00",
+    "address": 1,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c294":{
+    "name": "Community Gathering Sustainability",
+    "start_time": "2024-11-17T09:49:00",
+    "end_time": "2024-11-17T11:49:00",
+    "address": 7,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c295":{
+    "name": "Political Debate Virtual",
+    "start_time": "2024-04-30T14:31:00",
+    "end_time": "2024-04-30T18:31:00",
+    "address": 3,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c296":{
+    "name": "Dance Performance Annual",
+    "start_time": "2022-04-15T10:06:00",
+    "end_time": "2022-04-15T12:06:00",
+    "address": 15,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c297":{
+    "name": "Art Exhibition Symposium",
+    "start_time": "2022-11-30T10:22:00",
+    "end_time": "2022-11-30T12:22:00",
+    "address": 13,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c298":{
+    "name": "Food Festival Rising Star",
+    "start_time": "2023-08-25T12:18:00",
+    "end_time": "2023-08-25T14:18:00",
+    "address": 0,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c299":{
+    "name": "Sports Tournament Celebration",
+    "start_time": "2022-02-24T13:32:00",
+    "end_time": "2022-02-24T16:32:00",
+    "address": 1,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c29a":{
+    "name": "Community Gathering Digital",
+    "start_time": "2022-03-28T14:41:00",
+    "end_time": "2022-03-28T17:41:00",
+    "address": 14,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c29b":{
+    "name": "Charity Auction Digital",
+    "start_time": "2024-07-28T16:11:00",
+    "end_time": "2024-07-28T20:11:00",
+    "address": 9,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c29c":{
+    "name": "Political Debate Startup",
+    "start_time": "2022-11-08T18:34:00",
+    "end_time": "2022-11-08T22:34:00",
+    "address": 0,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c29d":{
+    "name": "Community Gathering Networking",
+    "start_time": "2022-04-23T18:59:00",
+    "end_time": "2022-04-23T20:59:00",
+    "address": 15,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c29e":{
+    "name": "Community Gathering Sustainability",
+    "start_time": "2022-11-25T17:58:00",
+    "end_time": "2022-11-25T19:58:00",
+    "address": 9,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c29f":{
+    "name": "Music Concert Live",
+    "start_time": "2024-01-12T12:45:00",
+    "end_time": "2024-01-12T15:45:00",
+    "address": 6,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c2a0":{
+    "name": "Code Jam Meetup",
+    "start_time": "2023-02-15T10:55:00",
+    "end_time": "2023-02-15T14:55:00",
+    "address": 14,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c2a1":{
+    "name": "Charity Auction Gala",
+    "start_time": "2023-05-29T11:32:00",
+    "end_time": "2023-05-29T13:32:00",
+    "address": 0,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c2a2":{
+    "name": "Hackathon Pop",
+    "start_time": "2022-11-04T11:02:00",
+    "end_time": "2022-11-04T15:02:00",
+    "address": 11,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2a3":{
+    "name": "Yoga Retreat 2024",
+    "start_time": "2022-02-12T14:26:00",
+    "end_time": "2022-02-12T16:26:00",
+    "address": 6,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c2a4":{
+    "name": "Environmental Summit Screening",
+    "start_time": "2022-11-26T10:33:00",
+    "end_time": "2022-11-26T13:33:00",
+    "address": 2,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c2a5":{
+    "name": "Art Exhibition Classical",
+    "start_time": "2023-01-17T10:19:00",
+    "end_time": "2023-01-17T14:19:00",
+    "address": 10,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2a6":{
+    "name": "Dance Performance Art Walk",
+    "start_time": "2022-04-04T14:06:00",
+    "end_time": "2022-04-04T18:06:00",
+    "address": 10,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2a7":{
+    "name": "Yoga Retreat Jazz",
+    "start_time": "2022-08-23T16:59:00",
+    "end_time": "2022-08-23T18:59:00",
+    "address": 11,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c2a8":{
+    "name": "Hackathon Gala",
+    "start_time": "2023-07-25T17:57:00",
+    "end_time": "2023-07-25T19:57:00",
+    "address": 5,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2a9":{
+    "name": "Workshop 2024",
+    "start_time": "2024-12-17T09:13:00",
+    "end_time": "2024-12-17T13:13:00",
+    "address": 10,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2aa":{
+    "name": "Workshop Conference",
+    "start_time": "2024-11-23T17:25:00",
+    "end_time": "2024-11-23T20:25:00",
+    "address": 1,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2ab":{
+    "name": "Sports Tournament Live",
+    "start_time": "2022-11-25T12:38:00",
+    "end_time": "2022-11-25T16:38:00",
+    "address": 9,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2ac":{
+    "name": "Literature Symposium 2024",
+    "start_time": "2024-11-16T12:47:00",
+    "end_time": "2024-11-16T14:47:00",
+    "address": 12,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c2ad":{
+    "name": "Art Exhibition Conference",
+    "start_time": "2022-03-03T16:31:00",
+    "end_time": "2022-03-03T19:31:00",
+    "address": 6,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2ae":{
+    "name": "Sports Tournament Festival",
+    "start_time": "2023-12-24T18:21:00",
+    "end_time": "2023-12-24T20:21:00",
+    "address": 6,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2af":{
+    "name": "Art Exhibition Meetup",
+    "start_time": "2024-04-13T09:07:00",
+    "end_time": "2024-04-13T12:07:00",
+    "address": 15,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2b0":{
+    "name": "Sports Tournament Fundraiser",
+    "start_time": "2022-01-25T16:18:00",
+    "end_time": "2022-01-25T18:18:00",
+    "address": 2,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2b1":{
+    "name": "Code Jam Meetup",
+    "start_time": "2023-02-05T14:29:00",
+    "end_time": "2023-02-05T16:29:00",
+    "address": 3,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2b2":{
+    "name": "Dance Performance Cultural",
+    "start_time": "2022-05-22T10:41:00",
+    "end_time": "2022-05-22T13:41:00",
+    "address": 10,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2b3":{
+    "name": "Art Exhibition Digital",
+    "start_time": "2023-05-16T11:49:00",
+    "end_time": "2023-05-16T13:49:00",
+    "address": 2,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2b4":{
+    "name": "Hackathon Art Walk",
+    "start_time": "2022-11-18T13:09:00",
+    "end_time": "2022-11-18T15:09:00",
+    "address": 4,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2b5":{
+    "name": "Dance Performance Startup",
+    "start_time": "2022-01-29T17:23:00",
+    "end_time": "2022-01-29T21:23:00",
+    "address": 9,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2b6":{
+    "name": "Science Fair Exhibition",
+    "start_time": "2023-06-10T15:28:00",
+    "end_time": "2023-06-10T17:28:00",
+    "address": 3,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c2b7":{
+    "name": "Community Gathering Local",
+    "start_time": "2022-12-23T17:15:00",
+    "end_time": "2022-12-23T21:15:00",
+    "address": 6,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2b8":{
+    "name": "Literature Symposium Symposium",
+    "start_time": "2024-06-03T11:40:00",
+    "end_time": "2024-06-03T15:40:00",
+    "address": 15,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c2b9":{
+    "name": "Code Jam Online",
+    "start_time": "2022-11-23T11:34:00",
+    "end_time": "2022-11-23T15:34:00",
+    "address": 9,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2ba":{
+    "name": "Environmental Summit Online",
+    "start_time": "2023-02-18T14:55:00",
+    "end_time": "2023-02-18T16:55:00",
+    "address": 6,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2bb":{
+    "name": "Film Screening Meetup",
+    "start_time": "2022-08-11T09:58:00",
+    "end_time": "2022-08-11T12:58:00",
+    "address": 0,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2bc":{
+    "name": "Political Rally Festival",
+    "start_time": "2022-01-10T12:17:00",
+    "end_time": "2022-01-10T14:17:00",
+    "address": 7,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2bd":{
+    "name": "Food Festival Debate",
+    "start_time": "2023-03-21T16:14:00",
+    "end_time": "2023-03-21T20:14:00",
+    "address": 11,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2be":{
+    "name": "Literature Symposium Live",
+    "start_time": "2024-05-09T15:51:00",
+    "end_time": "2024-05-09T18:51:00",
+    "address": 10,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c2bf":{
+    "name": "Political Rally Annual",
+    "start_time": "2024-03-23T15:04:00",
+    "end_time": "2024-03-23T18:04:00",
+    "address": 0,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2c0":{
+    "name": "Political Rally Networking",
+    "start_time": "2022-09-17T15:40:00",
+    "end_time": "2022-09-17T18:40:00",
+    "address": 8,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2c1":{
+    "name": "Political Debate Networking",
+    "start_time": "2022-09-29T10:53:00",
+    "end_time": "2022-09-29T13:53:00",
+    "address": 0,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2c2":{
+    "name": "Film Screening Conference",
+    "start_time": "2024-10-26T11:39:00",
+    "end_time": "2024-10-26T15:39:00",
+    "address": 13,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2c3":{
+    "name": "Hackathon Online",
+    "start_time": "2024-08-15T17:35:00",
+    "end_time": "2024-08-15T20:35:00",
+    "address": 14,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2c4":{
+    "name": "Charity Auction Global",
+    "start_time": "2022-04-15T16:10:00",
+    "end_time": "2022-04-15T19:10:00",
+    "address": 2,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2c5":{
+    "name": "Literature Symposium Tech",
+    "start_time": "2022-05-30T14:11:00",
+    "end_time": "2022-05-30T16:11:00",
+    "address": 8,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c2c6":{
+    "name": "Dance Performance Screening",
+    "start_time": "2023-12-09T12:59:00",
+    "end_time": "2023-12-09T15:59:00",
+    "address": 0,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c2c7":{
+    "name": "Science Fair Annual",
+    "start_time": "2022-05-17T17:14:00",
+    "end_time": "2022-05-17T20:14:00",
+    "address": 2,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2c8":{
+    "name": "Code Jam Art Walk",
+    "start_time": "2023-01-18T12:04:00",
+    "end_time": "2023-01-18T15:04:00",
+    "address": 4,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2c9":{
+    "name": "Theater Play Coding Bootcamp",
+    "start_time": "2023-05-21T12:01:00",
+    "end_time": "2023-05-21T15:01:00",
+    "address": 0,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c2ca":{
+    "name": "Workshop Debate",
+    "start_time": "2022-09-20T12:23:00",
+    "end_time": "2022-09-20T16:23:00",
+    "address": 14,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c2cb":{
+    "name": "Community Gathering Literary",
+    "start_time": "2024-12-10T12:12:00",
+    "end_time": "2024-12-10T15:12:00",
+    "address": 7,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c2cc":{
+    "name": "School Reunion 2024",
+    "start_time": "2024-04-02T18:48:00",
+    "end_time": "2024-04-02T22:48:00",
+    "address": 5,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2cd":{
+    "name": "Science Fair Gala",
+    "start_time": "2024-08-22T10:26:00",
+    "end_time": "2024-08-22T12:26:00",
+    "address": 6,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2ce":{
+    "name": "Art Exhibition Seminar",
+    "start_time": "2024-11-30T11:46:00",
+    "end_time": "2024-11-30T14:46:00",
+    "address": 6,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c2cf":{
+    "name": "Science Fair Celebration",
+    "start_time": "2024-11-18T15:51:00",
+    "end_time": "2024-11-18T17:51:00",
+    "address": 1,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2d0":{
+    "name": "Food Festival Screening",
+    "start_time": "2023-04-05T14:12:00",
+    "end_time": "2023-04-05T18:12:00",
+    "address": 4,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c2d1":{
+    "name": "Science Fair Youth Empowerment",
+    "start_time": "2022-11-05T10:43:00",
+    "end_time": "2022-11-05T12:43:00",
+    "address": 2,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c2d2":{
+    "name": "Dance Performance Annual",
+    "start_time": "2023-06-19T15:19:00",
+    "end_time": "2023-06-19T18:19:00",
+    "address": 7,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2d3":{
+    "name": "Workshop Virtual",
+    "start_time": "2023-03-13T13:24:00",
+    "end_time": "2023-03-13T17:24:00",
+    "address": 5,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2d4":{
+    "name": "Food Festival Hackathon",
+    "start_time": "2022-03-17T14:32:00",
+    "end_time": "2022-03-17T17:32:00",
+    "address": 8,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2d5":{
+    "name": "Charity Auction Political Campaign",
+    "start_time": "2022-01-25T15:35:00",
+    "end_time": "2022-01-25T18:35:00",
+    "address": 11,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2d6":{
+    "name": "Tech Talk Celebration",
+    "start_time": "2023-11-15T18:18:00",
+    "end_time": "2023-11-15T20:18:00",
+    "address": 8,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c2d7":{
+    "name": "Film Screening Workshop",
+    "start_time": "2022-12-11T12:59:00",
+    "end_time": "2022-12-11T14:59:00",
+    "address": 15,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2d8":{
+    "name": "Workshop Classical",
+    "start_time": "2023-05-24T15:09:00",
+    "end_time": "2023-05-24T19:09:00",
+    "address": 6,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2d9":{
+    "name": "Theater Play Seminar",
+    "start_time": "2024-05-10T13:18:00",
+    "end_time": "2024-05-10T15:18:00",
+    "address": 8,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2da":{
+    "name": "Literature Symposium Hackathon",
+    "start_time": "2022-12-22T11:35:00",
+    "end_time": "2022-12-22T13:35:00",
+    "address": 14,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c2db":{
+    "name": "School Reunion Seminar",
+    "start_time": "2024-08-30T16:57:00",
+    "end_time": "2024-08-30T18:57:00",
+    "address": 10,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2dc":{
+    "name": "Tech Talk Webinar",
+    "start_time": "2022-05-04T09:26:00",
+    "end_time": "2022-05-04T13:26:00",
+    "address": 9,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c2dd":{
+    "name": "Code Jam Classical",
+    "start_time": "2024-08-26T18:44:00",
+    "end_time": "2024-08-26T21:44:00",
+    "address": 12,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c2de":{
+    "name": "Charity Auction Innovation",
+    "start_time": "2022-07-26T14:20:00",
+    "end_time": "2022-07-26T17:20:00",
+    "address": 0,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2df":{
+    "name": "Sports Tournament Coding Bootcamp",
+    "start_time": "2024-04-20T10:04:00",
+    "end_time": "2024-04-20T12:04:00",
+    "address": 3,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2e0":{
+    "name": "Environmental Summit 2024",
+    "start_time": "2023-09-09T16:13:00",
+    "end_time": "2023-09-09T19:13:00",
+    "address": 10,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2e1":{
+    "name": "Dance Performance Local",
+    "start_time": "2024-12-06T16:10:00",
+    "end_time": "2024-12-06T18:10:00",
+    "address": 0,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2e2":{
+    "name": "Tech Talk Rising Star",
+    "start_time": "2023-11-12T16:27:00",
+    "end_time": "2023-11-12T19:27:00",
+    "address": 14,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2e3":{
+    "name": "Environmental Summit Seminar",
+    "start_time": "2022-12-10T16:37:00",
+    "end_time": "2022-12-10T18:37:00",
+    "address": 2,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c2e4":{
+    "name": "Charity Auction Youth Empowerment",
+    "start_time": "2024-10-11T15:50:00",
+    "end_time": "2024-10-11T17:50:00",
+    "address": 1,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2e5":{
+    "name": "Charity Auction Annual",
+    "start_time": "2022-10-09T13:42:00",
+    "end_time": "2022-10-09T17:42:00",
+    "address": 11,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c2e6":{
+    "name": "Science Fair Live",
+    "start_time": "2023-04-04T15:49:00",
+    "end_time": "2023-04-04T19:49:00",
+    "address": 10,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2e7":{
+    "name": "Food Festival Local",
+    "start_time": "2022-11-06T18:05:00",
+    "end_time": "2022-11-06T20:05:00",
+    "address": 2,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c2e8":{
+    "name": "Dance Performance Festival",
+    "start_time": "2023-03-29T16:41:00",
+    "end_time": "2023-03-29T19:41:00",
+    "address": 11,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2e9":{
+    "name": "Code Jam Classical",
+    "start_time": "2023-10-30T12:08:00",
+    "end_time": "2023-10-30T16:08:00",
+    "address": 15,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c2ea":{
+    "name": "School Reunion Annual",
+    "start_time": "2023-12-09T16:21:00",
+    "end_time": "2023-12-09T20:21:00",
+    "address": 8,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c2eb":{
+    "name": "Tech Talk Global",
+    "start_time": "2022-10-13T10:54:00",
+    "end_time": "2022-10-13T12:54:00",
+    "address": 13,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c2ec":{
+    "name": "Tech Talk Concert",
+    "start_time": "2024-07-12T10:44:00",
+    "end_time": "2024-07-12T12:44:00",
+    "address": 0,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2ed":{
+    "name": "Film Screening Exhibition",
+    "start_time": "2023-03-11T09:10:00",
+    "end_time": "2023-03-11T13:10:00",
+    "address": 6,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c2ee":{
+    "name": "Art Exhibition Symposium",
+    "start_time": "2024-12-04T17:11:00",
+    "end_time": "2024-12-04T19:11:00",
+    "address": 9,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c2ef":{
+    "name": "Political Rally Sustainability",
+    "start_time": "2024-07-20T11:15:00",
+    "end_time": "2024-07-20T15:15:00",
+    "address": 5,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c2f0":{
+    "name": "Theater Play Symposium",
+    "start_time": "2023-12-17T16:17:00",
+    "end_time": "2023-12-17T18:17:00",
+    "address": 15,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c2f1":{
+    "name": "School Reunion Jazz",
+    "start_time": "2022-06-30T09:01:00",
+    "end_time": "2022-06-30T12:01:00",
+    "address": 6,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c2f2":{
+    "name": "Workshop Global",
+    "start_time": "2024-07-14T09:35:00",
+    "end_time": "2024-07-14T12:35:00",
+    "address": 14,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c2f3":{
+    "name": "Hackathon Political Campaign",
+    "start_time": "2024-08-16T17:20:00",
+    "end_time": "2024-08-16T19:20:00",
+    "address": 3,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c2f4":{
+    "name": "Code Jam Online",
+    "start_time": "2023-12-06T14:22:00",
+    "end_time": "2023-12-06T17:22:00",
+    "address": 15,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c2f5":{
+    "name": "Science Fair Annual",
+    "start_time": "2024-09-12T11:04:00",
+    "end_time": "2024-09-12T14:04:00",
+    "address": 1,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c2f6":{
+    "name": "Music Concert Coding Bootcamp",
+    "start_time": "2023-12-24T12:45:00",
+    "end_time": "2023-12-24T15:45:00",
+    "address": 2,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2f7":{
+    "name": "Charity Auction Virtual",
+    "start_time": "2024-06-25T12:20:00",
+    "end_time": "2024-06-25T14:20:00",
+    "address": 15,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c2f8":{
+    "name": "School Reunion Coding Bootcamp",
+    "start_time": "2022-09-12T15:36:00",
+    "end_time": "2022-09-12T18:36:00",
+    "address": 12,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2f9":{
+    "name": "Science Fair Pop",
+    "start_time": "2023-08-24T09:33:00",
+    "end_time": "2023-08-24T12:33:00",
+    "address": 15,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c2fa":{
+    "name": "School Reunion Online",
+    "start_time": "2022-06-25T18:05:00",
+    "end_time": "2022-06-25T22:05:00",
+    "address": 2,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c2fb":{
+    "name": "Dance Performance Webinar",
+    "start_time": "2024-09-22T11:49:00",
+    "end_time": "2024-09-22T14:49:00",
+    "address": 8,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c2fc":{
+    "name": "Code Jam Summit",
+    "start_time": "2024-11-04T18:17:00",
+    "end_time": "2024-11-04T22:17:00",
+    "address": 10,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c2fd":{
+    "name": "Film Screening Literary",
+    "start_time": "2024-05-31T10:44:00",
+    "end_time": "2024-05-31T14:44:00",
+    "address": 0,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c2fe":{
+    "name": "Hackathon Gala",
+    "start_time": "2023-02-01T10:00:00",
+    "end_time": "2023-02-01T12:00:00",
+    "address": 13,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c2ff":{
+    "name": "Environmental Summit Global",
+    "start_time": "2022-04-13T15:39:00",
+    "end_time": "2022-04-13T18:39:00",
+    "address": 3,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c300":{
+    "name": "Literature Symposium Concert",
+    "start_time": "2023-02-17T14:59:00",
+    "end_time": "2023-02-17T18:59:00",
+    "address": 12,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c301":{
+    "name": "Literature Symposium Seminar",
+    "start_time": "2023-04-08T18:48:00",
+    "end_time": "2023-04-08T22:48:00",
+    "address": 10,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c302":{
+    "name": "Political Rally Coding Bootcamp",
+    "start_time": "2022-11-12T18:11:00",
+    "end_time": "2022-11-12T21:11:00",
+    "address": 11,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c303":{
+    "name": "Music Concert Retreat",
+    "start_time": "2022-10-23T15:35:00",
+    "end_time": "2022-10-23T19:35:00",
+    "address": 2,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c304":{
+    "name": "Yoga Retreat Festival",
+    "start_time": "2024-06-11T11:29:00",
+    "end_time": "2024-06-11T13:29:00",
+    "address": 14,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c305":{
+    "name": "Science Fair Literary",
+    "start_time": "2022-03-09T16:58:00",
+    "end_time": "2022-03-09T19:58:00",
+    "address": 1,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c306":{
+    "name": "Hackathon Exhibition",
+    "start_time": "2022-08-17T12:13:00",
+    "end_time": "2022-08-17T15:13:00",
+    "address": 15,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c307":{
+    "name": "Film Screening Online",
+    "start_time": "2022-07-08T15:48:00",
+    "end_time": "2022-07-08T17:48:00",
+    "address": 14,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c308":{
+    "name": "Environmental Summit Tech",
+    "start_time": "2022-01-05T13:05:00",
+    "end_time": "2022-01-05T17:05:00",
+    "address": 13,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c309":{
+    "name": "School Reunion Live",
+    "start_time": "2024-11-17T13:39:00",
+    "end_time": "2024-11-17T17:39:00",
+    "address": 14,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c30a":{
+    "name": "Food Festival Symposium",
+    "start_time": "2022-10-05T10:10:00",
+    "end_time": "2022-10-05T13:10:00",
+    "address": 10,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c30b":{
+    "name": "Tech Talk Cultural",
+    "start_time": "2023-11-10T11:16:00",
+    "end_time": "2023-11-10T13:16:00",
+    "address": 7,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c30c":{
+    "name": "Film Screening Networking",
+    "start_time": "2022-07-21T14:57:00",
+    "end_time": "2022-07-21T18:57:00",
+    "address": 1,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c30d":{
+    "name": "Food Festival Workshop",
+    "start_time": "2023-03-16T09:36:00",
+    "end_time": "2023-03-16T13:36:00",
+    "address": 2,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c30e":{
+    "name": "Art Exhibition Festival",
+    "start_time": "2022-10-23T15:28:00",
+    "end_time": "2022-10-23T19:28:00",
+    "address": 4,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c30f":{
+    "name": "Community Gathering Debate",
+    "start_time": "2024-08-15T18:36:00",
+    "end_time": "2024-08-15T22:36:00",
+    "address": 1,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c310":{
+    "name": "Workshop Political Campaign",
+    "start_time": "2024-01-31T17:46:00",
+    "end_time": "2024-01-31T19:46:00",
+    "address": 10,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c311":{
+    "name": "School Reunion Seminar",
+    "start_time": "2024-08-04T09:40:00",
+    "end_time": "2024-08-04T13:40:00",
+    "address": 9,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c312":{
+    "name": "Hackathon Webinar",
+    "start_time": "2022-08-31T10:37:00",
+    "end_time": "2022-08-31T12:37:00",
+    "address": 6,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c313":{
+    "name": "Sports Tournament Local",
+    "start_time": "2023-11-30T13:49:00",
+    "end_time": "2023-11-30T17:49:00",
+    "address": 12,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c314":{
+    "name": "Charity Auction Virtual",
+    "start_time": "2024-02-07T16:22:00",
+    "end_time": "2024-02-07T19:22:00",
+    "address": 0,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c315":{
+    "name": "Tech Talk International",
+    "start_time": "2024-10-18T13:26:00",
+    "end_time": "2024-10-18T16:26:00",
+    "address": 0,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c316":{
+    "name": "Food Festival Meetup",
+    "start_time": "2024-02-09T11:14:00",
+    "end_time": "2024-02-09T14:14:00",
+    "address": 0,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c317":{
+    "name": "Workshop Annual",
+    "start_time": "2022-05-29T18:58:00",
+    "end_time": "2022-05-29T22:58:00",
+    "address": 3,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c318":{
+    "name": "Sports Tournament Concert",
+    "start_time": "2024-01-29T11:17:00",
+    "end_time": "2024-01-29T13:17:00",
+    "address": 15,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c319":{
+    "name": "Code Jam Fundraiser",
+    "start_time": "2022-01-07T18:05:00",
+    "end_time": "2022-01-07T22:05:00",
+    "address": 5,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c31a":{
+    "name": "Food Festival Cultural",
+    "start_time": "2022-04-15T12:34:00",
+    "end_time": "2022-04-15T15:34:00",
+    "address": 0,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c31b":{
+    "name": "Environmental Summit Retreat",
+    "start_time": "2023-08-24T10:09:00",
+    "end_time": "2023-08-24T12:09:00",
+    "address": 6,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c31c":{
+    "name": "Political Rally 2024",
+    "start_time": "2024-07-13T18:31:00",
+    "end_time": "2024-07-13T20:31:00",
+    "address": 8,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c31d":{
+    "name": "Sports Tournament Youth Empowerment",
+    "start_time": "2022-12-08T18:49:00",
+    "end_time": "2022-12-08T22:49:00",
+    "address": 15,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c31e":{
+    "name": "Tech Talk Cultural",
+    "start_time": "2023-09-14T09:43:00",
+    "end_time": "2023-09-14T11:43:00",
+    "address": 15,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c31f":{
+    "name": "Science Fair Summit",
+    "start_time": "2023-04-20T14:33:00",
+    "end_time": "2023-04-20T18:33:00",
+    "address": 7,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c320":{
+    "name": "Code Jam Networking",
+    "start_time": "2023-03-04T10:10:00",
+    "end_time": "2023-03-04T14:10:00",
+    "address": 1,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c321":{
+    "name": "Charity Auction International",
+    "start_time": "2023-07-09T15:45:00",
+    "end_time": "2023-07-09T19:45:00",
+    "address": 13,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c322":{
+    "name": "Yoga Retreat Exhibition",
+    "start_time": "2023-05-09T15:44:00",
+    "end_time": "2023-05-09T19:44:00",
+    "address": 5,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c323":{
+    "name": "Literature Symposium Cultural",
+    "start_time": "2023-01-05T14:31:00",
+    "end_time": "2023-01-05T16:31:00",
+    "address": 0,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c324":{
+    "name": "Yoga Retreat Conference",
+    "start_time": "2022-07-30T11:15:00",
+    "end_time": "2022-07-30T14:15:00",
+    "address": 3,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c325":{
+    "name": "Charity Auction Startup",
+    "start_time": "2023-12-12T12:40:00",
+    "end_time": "2023-12-12T16:40:00",
+    "address": 6,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c326":{
+    "name": "Food Festival Jazz",
+    "start_time": "2023-11-05T18:43:00",
+    "end_time": "2023-11-05T20:43:00",
+    "address": 8,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c327":{
+    "name": "Science Fair Workshop",
+    "start_time": "2024-09-15T17:11:00",
+    "end_time": "2024-09-15T21:11:00",
+    "address": 7,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c328":{
+    "name": "Sports Tournament Debate",
+    "start_time": "2024-01-23T12:00:00",
+    "end_time": "2024-01-23T16:00:00",
+    "address": 11,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c329":{
+    "name": "Political Debate Workshop",
+    "start_time": "2023-02-15T09:38:00",
+    "end_time": "2023-02-15T13:38:00",
+    "address": 14,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c32a":{
+    "name": "Sports Tournament Workshop",
+    "start_time": "2024-12-13T13:07:00",
+    "end_time": "2024-12-13T15:07:00",
+    "address": 14,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c32b":{
+    "name": "School Reunion Symposium",
+    "start_time": "2024-09-22T15:02:00",
+    "end_time": "2024-09-22T17:02:00",
+    "address": 9,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c32c":{
+    "name": "Hackathon Fundraiser",
+    "start_time": "2024-10-28T09:16:00",
+    "end_time": "2024-10-28T12:16:00",
+    "address": 8,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c32d":{
+    "name": "Community Gathering Celebration",
+    "start_time": "2024-11-21T16:55:00",
+    "end_time": "2024-11-21T20:55:00",
+    "address": 13,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c32e":{
+    "name": "Charity Auction Meetup",
+    "start_time": "2024-04-30T18:58:00",
+    "end_time": "2024-04-30T22:58:00",
+    "address": 11,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c32f":{
+    "name": "Workshop Retreat",
+    "start_time": "2024-06-01T18:46:00",
+    "end_time": "2024-06-01T22:46:00",
+    "address": 13,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c330":{
+    "name": "Literature Symposium Youth Empowerment",
+    "start_time": "2024-08-19T09:40:00",
+    "end_time": "2024-08-19T13:40:00",
+    "address": 3,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c331":{
+    "name": "Political Debate Virtual",
+    "start_time": "2024-08-09T14:29:00",
+    "end_time": "2024-08-09T18:29:00",
+    "address": 5,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c332":{
+    "name": "Tech Talk Political Campaign",
+    "start_time": "2024-04-28T13:44:00",
+    "end_time": "2024-04-28T16:44:00",
+    "address": 13,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c333":{
+    "name": "Community Gathering Classical",
+    "start_time": "2022-07-13T18:14:00",
+    "end_time": "2022-07-13T20:14:00",
+    "address": 3,
+    "virtual": true
+  },
+  "675dca14fc13ae0f22e1c334":{
+    "name": "Community Gathering Celebration",
+    "start_time": "2022-08-31T15:08:00",
+    "end_time": "2022-08-31T17:08:00",
+    "address": 10,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c335":{
+    "name": "Tech Talk Debate",
+    "start_time": "2024-08-06T18:24:00",
+    "end_time": "2024-08-06T21:24:00",
+    "address": 2,
+    "virtual": false
+  },
+  "675dca14fc13ae0f22e1c336":{
+    "name": "Literature Symposium Debate",
+    "start_time": "2024-03-30T17:07:00",
+    "end_time": "2024-03-30T21:07:00",
+    "address": 4,
+    "virtual": false
+  }
+}
