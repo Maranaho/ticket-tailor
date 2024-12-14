@@ -172,7 +172,7 @@ const populateList = ()=>{
                     })
                 }
                 locationElt.classList.add("location")
-                
+
                 // Fill up the info
                 infoElt.appendChild(startAndEndTime)
                 infoElt.appendChild(locationElt)
@@ -212,4 +212,4 @@ const init = ()=>{
     eventListElt.addEventListener("click",handleEventClick)
 }
 
-getData()
+// getData()

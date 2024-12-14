@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap");
 @font-face {
   font-family: "Coustard";
   src: url("../assets/font/Coustard-Black.woff") format("woff");
@@ -5,16 +6,195 @@
   font-style: normal;
   font-display: swap;
 }
+.links {
+  display: inline-flex;
+  gap: 9px;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+}
+.links:hover {
+  opacity: 0.9;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  background: #222432;
+  border-radius: 40px;
+  padding: 15px 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1em;
+}
+.btn:hover {
+  background: #2a2d42;
+}
+.btn:disabled {
+  background: #e6e7eb;
+  cursor: not-allowed;
+}
+
 body {
-  font-family: sans-serif;
+  font-family: "Gabarito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
   font-size: 16px;
   margin: 0;
+}
+
+button {
+  font-family: "Gabarito", sans-serif;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background: #222432;
+  color: #fff;
+  align-items: center;
+  font-size: 0.8em;
+  padding: 10px 20px;
+}
+nav > aside {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.account {
+  font-size: 0.85em;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.account .user {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+}
+.account .user #fullName {
+  opacity: 0.5;
+}
+.account #avatar {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4em;
+  border-radius: 40px;
+  background: #353850;
 }
 
 h1 {
   font-family: "Coustard", sans-serif;
   font-weight: 900;
   margin: 0;
+  display: flex;
+  align-items: baseline;
+  color: #222432;
+  font-size: 2em;
+  gap: 0.3ch;
+}
+h1 span {
+  line-height: 1.6ch;
+}
+h1 .nickname {
+  background: url("../assets/svg/pinkclip.svg");
+  background-size: 100% 100%;
+  padding: 0 9px;
+  position: relative;
+}
+h1 .nickname:after {
+  content: "";
+  background: url("../assets/illustrations/spark-13-15.png");
+  background-size: 100% 100%;
+  display: block;
+  width: 13px;
+  height: 15px;
+  position: absolute;
+  top: -8px;
+  right: -11px;
+}
+
+header {
+  background: #FDF9F8;
+  padding: 110px 0;
+}
+header h1 {
+  width: 800px;
+  margin: 0 auto;
+}
+
+#eventList {
+  width: 800px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border: 4px solid #F9F2F0;
+  border-radius: 35px;
+  box-shadow: 0 5px 8px rgba(204, 192, 189, 0.3), 0 30px 70px rgba(204, 192, 189, 0.3);
+  transform: translateY(-70px);
+  min-height: 300px;
+  max-height: calc(100vh - 450px);
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* For Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+#eventList::-webkit-scrollbar {
+  width: 10px;
+  height: 12px;
+}
+#eventList::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 6px;
+}
+#eventList::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+#eventList::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.wobblyBtn {
+  background: url("../assets/svg/orange-clip.svg");
+  line-height: 1.6ch;
+  background-size: 100% 100%;
+  color: #222432;
+  text-decoration: none;
+  display: inline-flex;
+  gap: 9px;
+  align-items: center;
+  padding: 4px 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.wobblyBtn:hover {
+  background-image: url("../assets/svg/wobblycliphover.svg");
+}
+
+footer {
+  width: 800px;
+  margin: 0 auto;
+  padding: 30px 0;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .selected {

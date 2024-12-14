@@ -8,10 +8,91 @@
     <link rel="stylesheet" href="./styles/styles.css"/>
 </head>
 <body>
-    <h1>Ticket Tailor</h1>
-    <section id="eventList">
-       Loading...
-    </section>
+    <main>
+        <section>
+            
+            <!-- Topbar -->
+            <nav>
+                <img
+                    src="./assets/svg/tt-logo.svg"
+                    alt="Ticket Tailor"
+                />
+                <aside>
+                    <a
+                        target="_blank"
+                        class="wobblyBtn"
+                        href="https://github.com/Maranaho/ticket-tailor"
+                    >
+                        <img
+                            src="./assets/svg/github.svg"
+                            alt="Github icon"
+                            width="18"
+                        />
+                        <span>Check the code</span>
+                    </a>
+                    <a
+                        target="_blank"
+                        class="links"
+                        href="https://www.figma.com/design/LdKSPC2pBNLvaUWFQYpyPS/Ticket-Tailor?node-id=1-21&t=LVAcQM7pwUzGZNp3-1"
+                    >
+                        <img
+                            src="./assets/svg/figma.svg"
+                            alt="Github icon"
+                            width="18"
+                        />
+                        <span>Design file</span>
+                    </a>
+                    <a
+                        target="_blank"
+                        class="links"
+                        href="#"
+                    >
+                        <img
+                            src="./assets/svg/play.svg"
+                            alt="Github icon"
+                            width="18"
+                        />
+                        <span>Walk through</span>
+                    </a>
+                    <div class="account">
+                        <div class="user">
+                            <span class="nickname">Naho</span>
+                            <span id="fullName">Maranaho N'Guessan</span>
+                        </div>
+                        <span id="avatar">N</span>
+                    </div>
+                </aside>
+            </nav>
+
+            <!-- Header -->
+            <header>
+                <h1>
+                    <span>Welcome,</span>
+                    <span class="nickname">Naho</span>
+                </h1>
+            </header>
+
+            
+            <!-- Event list -->
+            <section id="eventList">
+               Loading...
+            </section>
+
+        </section>
+
+        <footer>
+            <button class="btn" disabled>
+                <span>Submit</span>
+                <img
+                    src="./assets/svg/whitecheck.svg"
+                    alt="Github icon"
+                    width="18"
+                />
+            </button>
+        </footer>
+    </main>
+
+
 
     <!-- Moment JS to handle dates -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
