@@ -6,5 +6,5 @@
    ```bash
    git clone https://git@github.com:Maranaho/ticket-tailor.git
    Or download and save on your computer
-   Open **index.html** in a web browser
+   Open index.html in a web browser
    ```
