@@ -4,7 +4,7 @@ import {
     ukAddresses
 } from "./utils.js"
 
-const threshold = 90
+// const threshold = 100
 const eventListElt = document.getElementById("eventList")
 let croppedEvents = null
 
@@ -46,10 +46,10 @@ const getData = async()=> {
         const res = await fetch('../events.json')
         if (!res.ok) throw new Error("Ohoh")
         const initialData = await res.json()
-        const croppedData = Object.fromEntries(
-            Object.entries(initialData).slice(0, threshold)
-        )
-        croppedEvents = handleData(croppedData)
+        // const croppedData = Object.fromEntries(
+        //     Object.entries(initialData).slice(0, threshold)
+        // )
+        croppedEvents = handleData(initialData)
         init()
     } catch (error) {
         console.error('Error loading the JSON file:', error)
