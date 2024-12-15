@@ -50,6 +50,8 @@ body {
     font-style: normal;
     font-size: 16px;
     margin: 0;
+
+    
 }
 
 button {
@@ -143,6 +145,7 @@ header {
 #eventList {
     width: $centerWidth;
     margin: 0 auto;
+    padding: 0;
     box-sizing: border-box;
     border: $borderWidth solid $borderColor;
     border-radius: 35px;
@@ -151,15 +154,158 @@ header {
         0 30px 70px rgba(204,192,189,.3);
     transform: translateY(-70px);
     min-height: 300px;
+    overflow-y: scroll;
     max-height: calc(100vh - 450px);
     background: #fff;
     display: flex;
-    justify-content: center;
     align-items: center;
+    flex-direction: column;
     @include custom-scrollbar;
-
-
 }
+
+.loading {
+    padding-top: 100px;
+}
+
+.Year {
+    width: 100%;
+    h3,h4 {
+        margin: 0;
+        padding: 2px 30px;
+        font-size: .9em;
+        position: sticky;
+        top:0;
+        transform: translateY(-1px);
+        background: #fff;
+        z-index: 2;
+        // border-bottom: 1px solid $borderColor;
+    }
+    h3 {
+        
+        border-bottom: 1px solid $borderColor;
+    }
+    h4 {
+        border-top: 1px solid $borderColor;
+        top: 18px;
+        z-index: 1;
+    }
+}
+
+.Event {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 20px 10px;
+    border-top: 1px solid $borderColor;
+    cursor: pointer;
+    &.selected label {
+        &:after{
+            border-color: #dddddd00;
+        }
+        &:before{
+            opacity: 1;
+        }
+    }
+    
+    label {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        &:before,
+        &:after {
+            content: "";
+            display: block;
+            width: 30px;
+            height: 30px;
+        }
+        &:before {
+            position: absolute;
+            left: calc(50% - 15px);
+            top: calc(50% - 15px);
+            background: url("../assets/svg/greencheck.svg");
+            opacity: 0;
+        }
+        &:after {
+            border: 1px solid #ddddddc2;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+        input { 
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            left: calc(50% - 19px);
+            top: calc(50% - 19px);
+            opacity: 0;
+        }
+    }
+
+    time {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-right: 1px solid $borderColor;
+        gap: 2px;
+        flex:1;
+        span{
+            &:nth-of-type(1){ font-size: .8em; }
+            &:nth-of-type(2){ 
+                font-size: 2.5em;
+                line-height: 1.3ch;
+                letter-spacing: -.06ch;
+                font-weight: 100;
+             }
+        }
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        font-size: .8em;
+        flex: 7;
+        box-sizing: border-box;
+        padding-left: 50px;
+        p,h5 { margin: 0 }
+        h5 { 
+            font-size: 1.5em;
+        }
+        .meta {
+            display: flex;
+            flex-direction: column;
+            gap: 0px;
+            
+        }
+        .location {
+            display: flex;
+            gap: 5px;
+            &:before {
+                background-image: url("../assets/svg/pin.svg");
+            }
+        }
+        .startAndEndTime,
+        .location {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            &:before {
+                content:"";
+                display: block;
+                width: 12px;
+                height: 12px;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: 100% auto;
+            }
+        }
+        .startAndEndTime:before {
+            background-image: url("../assets/svg/time.svg");
+        }
+    }
+}
+
 
 
 .wobblyBtn {
@@ -184,6 +330,3 @@ footer {
     display: flex;
     justify-content: flex-end;
 }
-
-.selected {background: rgb(199, 255, 221)}
-    

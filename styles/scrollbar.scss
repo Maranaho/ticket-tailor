@@ -1,25 +1,26 @@
 @mixin custom-scrollbar {
+    /* WebKit browsers (Chrome, Edge, Safari) */
     &::-webkit-scrollbar {
-      width: 10px; 
-      height: 12px; 
+      width: 12px; /* Width of the vertical scrollbar */
+      height: 12px; /* Height of the horizontal scrollbar */
     }
   
     &::-webkit-scrollbar-track {
-      background: #f1f1f1;
-      border-radius: 6px; 
+      background: #f1f1f1; /* Background of the track */
+      border-radius: 6px; /* Rounded corners */
     }
   
     &::-webkit-scrollbar-thumb {
-      background: #888;
-      border-radius: 10px; 
+      background: #888; /* Scroll handle color */
+      border-radius: 6px; /* Rounded corners */
     }
   
     &::-webkit-scrollbar-thumb:hover {
-      background: #555; 
+      background: #555; /* Scroll handle hover effect */
     }
   
     /* For Firefox */
-    scrollbar-width: thin; 
-    scrollbar-color: #888 #f1f1f1; 
+    scrollbar-width: thin; /* Options: auto, thin, none */
+    scrollbar-color: #888 #f1f1f1; /* Thumb and track colors */
   }
   

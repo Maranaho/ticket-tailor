@@ -4,7 +4,7 @@ import {
     ukAddresses
 } from "./utils.js"
 
-const threshold = 20
+const threshold = 90
 const eventListElt = document.getElementById("eventList")
 let croppedEvents = null
 
@@ -16,8 +16,8 @@ const handleData = data =>{
         const endTime = event.end_time
         const date = new Date(startTime)
         const year = date.getFullYear()
-        const day = date.getDay()
-        const weekday = days[day]
+        const day = date.getDate()
+        const weekday = days[date.getDay()]
         const eventMonth = `${date.getMonth()}_${year}`
         const address = ukAddresses[event.address]
         const newEvent = {
@@ -119,14 +119,13 @@ const populateList = ()=>{
                 
                 // Date
                 const dateElt = document.createElement("time")
-                console.log(month[eventKey]);
                 dateElt.dateTime = startTime.slice(0,10)
                 const dayElt = document.createElement("span")
                 const weekDayElt = document.createElement("span")
                 dayElt.innerText = day
                 weekDayElt.innerText = weekday.slice(0,3)
-                dateElt.appendChild(dayElt)
                 dateElt.appendChild(weekDayElt)
+                dateElt.appendChild(dayElt)
                 eventElt.appendChild(dateElt)
                 
                 
@@ -140,6 +139,8 @@ const populateList = ()=>{
                 infoElt.appendChild(titleElt)
                 
                 // Start and end time
+                const metaElt = document.createElement("div")
+                metaElt.classList.add("meta")
                 const startAndEndTime = document.createElement("span")
                 startAndEndTime.classList.add("startAndEndTime")
                 // Start time
@@ -160,6 +161,7 @@ const populateList = ()=>{
                 
                 // Location
                 let locationElt
+                
                 if(isVirtual) {
                     locationElt = document.createElement("span")
                     locationElt.innerText = "Online"
@@ -172,10 +174,11 @@ const populateList = ()=>{
                     })
                 }
                 locationElt.classList.add("location")
+                metaElt.appendChild(startAndEndTime)
 
                 // Fill up the info
-                infoElt.appendChild(startAndEndTime)
-                infoElt.appendChild(locationElt)
+                metaElt.appendChild(locationElt)
+                infoElt.appendChild(metaElt)
 
                 // Fill up the event
                 eventElt.appendChild(infoElt)
@@ -212,4 +215,4 @@ const init = ()=>{
     eventListElt.addEventListener("click",handleEventClick)
 }
 
-// getData()
+getData()

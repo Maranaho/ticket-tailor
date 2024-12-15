@@ -141,35 +141,176 @@ header h1 {
 #eventList {
   width: 800px;
   margin: 0 auto;
+  padding: 0;
   box-sizing: border-box;
   border: 4px solid #F9F2F0;
   border-radius: 35px;
   box-shadow: 0 5px 8px rgba(204, 192, 189, 0.3), 0 30px 70px rgba(204, 192, 189, 0.3);
   transform: translateY(-70px);
   min-height: 300px;
+  overflow-y: scroll;
   max-height: calc(100vh - 450px);
   background: #fff;
   display: flex;
-  justify-content: center;
   align-items: center;
+  flex-direction: column;
+  /* WebKit browsers (Chrome, Edge, Safari) */
   /* For Firefox */
-  scrollbar-width: thin;
-  scrollbar-color: #888 #f1f1f1;
+  scrollbar-width: thin; /* Options: auto, thin, none */
+  scrollbar-color: #888 #f1f1f1; /* Thumb and track colors */
 }
 #eventList::-webkit-scrollbar {
-  width: 10px;
-  height: 12px;
+  width: 12px; /* Width of the vertical scrollbar */
+  height: 12px; /* Height of the horizontal scrollbar */
 }
 #eventList::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 6px;
+  background: #f1f1f1; /* Background of the track */
+  border-radius: 6px; /* Rounded corners */
 }
 #eventList::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 10px;
+  background: #888; /* Scroll handle color */
+  border-radius: 6px; /* Rounded corners */
 }
 #eventList::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #555; /* Scroll handle hover effect */
+}
+
+.loading {
+  padding-top: 100px;
+}
+
+.Year {
+  width: 100%;
+}
+.Year h3, .Year h4 {
+  margin: 0;
+  padding: 2px 30px;
+  font-size: 0.9em;
+  position: sticky;
+  top: 0;
+  transform: translateY(-1px);
+  background: #fff;
+  z-index: 2;
+}
+.Year h3 {
+  border-bottom: 1px solid #F9F2F0;
+}
+.Year h4 {
+  border-top: 1px solid #F9F2F0;
+  top: 18px;
+  z-index: 1;
+}
+
+.Event {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 20px 10px;
+  border-top: 1px solid #F9F2F0;
+  cursor: pointer;
+}
+.Event.selected label:after {
+  border-color: rgba(221, 221, 221, 0);
+}
+.Event.selected label:before {
+  opacity: 1;
+}
+.Event label {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.Event label:before, .Event label:after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+.Event label:before {
+  position: absolute;
+  left: calc(50% - 15px);
+  top: calc(50% - 15px);
+  background: url("../assets/svg/greencheck.svg");
+  opacity: 0;
+}
+.Event label:after {
+  border: 1px solid rgba(221, 221, 221, 0.7607843137);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+.Event label input {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: calc(50% - 19px);
+  top: calc(50% - 19px);
+  opacity: 0;
+}
+.Event time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-right: 1px solid #F9F2F0;
+  gap: 2px;
+  flex: 1;
+}
+.Event time span:nth-of-type(1) {
+  font-size: 0.8em;
+}
+.Event time span:nth-of-type(2) {
+  font-size: 2.5em;
+  line-height: 1.3ch;
+  letter-spacing: -0.06ch;
+  font-weight: 100;
+}
+.Event .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  font-size: 0.8em;
+  flex: 7;
+  box-sizing: border-box;
+  padding-left: 50px;
+}
+.Event .info p, .Event .info h5 {
+  margin: 0;
+}
+.Event .info h5 {
+  font-size: 1.5em;
+}
+.Event .info .meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+.Event .info .location {
+  display: flex;
+  gap: 5px;
+}
+.Event .info .location:before {
+  background-image: url("../assets/svg/pin.svg");
+}
+.Event .info .startAndEndTime,
+.Event .info .location {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.Event .info .startAndEndTime:before,
+.Event .info .location:before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% auto;
+}
+.Event .info .startAndEndTime:before {
+  background-image: url("../assets/svg/time.svg");
 }
 
 .wobblyBtn {
@@ -195,8 +336,4 @@ footer {
   padding: 30px 0;
   display: flex;
   justify-content: flex-end;
-}
-
-.selected {
-  background: rgb(199, 255, 221);
 }/*# sourceMappingURL=styles.css.map */
