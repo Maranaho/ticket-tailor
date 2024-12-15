@@ -46,156 +46,158 @@ const getData = async()=> {
         const res = await fetch('../events.json')
         if (!res.ok) throw new Error("Ohoh")
         const initialData = await res.json()
-        // const croppedData = Object.fromEntries(
-        //     Object.entries(initialData).slice(0, threshold)
-        // )
         croppedEvents = handleData(initialData)
         init()
     } catch (error) {
         console.error('Error loading the JSON file:', error)
     }
 }
-
-const populateList = ()=>{
-
-    //refresh the list
+const populateList = () => {
+    // Refresh the list
     eventListElt.innerHTML = ""
 
-    //Populate the list
-    Object.keys(croppedEvents).forEach(yearKey=>{
+    // Populate the list
+    Object.keys(croppedEvents).forEach(yearKey => {
 
         // Year level
-        const year = croppedEvents[yearKey]
-        const yearElt = document.createElement("article")
-        yearElt.classList.add("Year")
-        
-        const yearTitleElt = document.createElement("h3")        
-        yearTitleElt.innerText = yearKey
-        yearElt.appendChild(yearTitleElt)
-        
-        Object.keys(year).forEach(monthKey=>{
-            
+        const year = croppedEvents[yearKey];
+        const yearElt = document.createElement("article");
+        yearElt.classList.add("Year");
+
+        const yearTitleElt = document.createElement("h3");
+        yearTitleElt.innerText = yearKey;
+        yearElt.appendChild(yearTitleElt);
+
+        Object.keys(year).sort((a, b) => {
+            const [monthA, yearA] = a.split('_').map(Number);
+            const [monthB, yearB] = b.split('_').map(Number);
+            return (yearA - yearB) || (monthA - monthB); 
+        }).forEach(monthKey => {
+
             // Month level
-            const month = year[monthKey]
-            const monthElt = document.createElement("article")
-            monthElt.classList.add("Month")
+            const month = year[monthKey];
+            const monthElt = document.createElement("article");
+            monthElt.classList.add("Month");
 
-            const monthTitleElt = document.createElement("h4")        
-            const monthIdx = Number(monthKey.split("_")[0])
-            monthTitleElt.innerText = months[monthIdx].slice(0,3)
-            monthElt.appendChild(monthTitleElt)
-            
-            Object.keys(month).forEach(eventKey=>{
-                
-                // Event level
+            const monthTitleElt = document.createElement("h4");
+            const monthIdx = Number(monthKey.split("_")[0]);
+            monthTitleElt.innerText = months[monthIdx].slice(0, 3);
+            monthElt.appendChild(monthTitleElt);
 
-                //Build out a single event
-                const path = `${yearKey}/${monthKey}/${eventKey}`
-                const eventElt = document.createElement("article")
-                eventElt.classList.add("Event")
-                eventElt.setAttribute("data-event-key",path)
-                const { 
-                    name,
-                    selected,
-                    startTime,
-                    endTime,
-                    day,
-                    isVirtual,
-                    weekday,
-                    address,
-                } = month[eventKey]
+            // Sort events within each month by start time
+            Object.keys(month)
+                .sort((a, b) => {
+                    const startTimeA = new Date(month[a].startTime);
+                    const startTimeB = new Date(month[b].startTime);
+                    return startTimeA - startTimeB;
+                })
+                .forEach(eventKey => {
 
+                    // Event level
 
-                // Checkbox
-                const selectLabelElt = document.createElement("label")
-                const checkboxElt = document.createElement("input")
-                checkboxElt.type = "checkbox"
-                selectLabelElt.setAttribute("for",eventKey)
-                checkboxElt.id = eventKey
-                checkboxElt.checked = selected
-                eventElt.classList.toggle("selected", selected)
-                selectLabelElt.appendChild(checkboxElt)
-                eventElt.appendChild(selectLabelElt)
-                
-                // Date
-                const dateElt = document.createElement("time")
-                dateElt.dateTime = startTime.slice(0,10)
-                const dayElt = document.createElement("span")
-                const weekDayElt = document.createElement("span")
-                dayElt.innerText = day
-                weekDayElt.innerText = weekday.slice(0,3)
-                dateElt.appendChild(weekDayElt)
-                dateElt.appendChild(dayElt)
-                eventElt.appendChild(dateElt)
-                
-                
-                // Info
-                const infoElt = document.createElement("div")
-                infoElt.classList.add("info")
-                
-                // Title
-                const titleElt = document.createElement("h5")
-                titleElt.innerText = name
-                infoElt.appendChild(titleElt)
-                
-                // Start and end time
-                const metaElt = document.createElement("div")
-                metaElt.classList.add("meta")
-                const startAndEndTime = document.createElement("span")
-                startAndEndTime.classList.add("startAndEndTime")
-                // Start time
-                const startTimeElt = document.createElement("span")
-                startTimeElt.innerText = moment(startTime)
-                .minute(Math.round(moment(startTime).minute() / 30) * 30)
-                .second(0)
-                .format('LT')
-                startAndEndTime.appendChild(startTimeElt)
+                    // Build out a single event
+                    const path = `${yearKey}/${monthKey}/${eventKey}`;
+                    const eventElt = document.createElement("article");
+                    eventElt.classList.add("Event");
+                    eventElt.setAttribute("data-event-key", path);
+                    const { 
+                        name, 
+                        selected, 
+                        startTime, 
+                        endTime, 
+                        day, 
+                        isVirtual, 
+                        weekday, 
+                        address 
+                    } = month[eventKey];
 
-                // End time
-                const endTimeElt = document.createElement("span")
-                endTimeElt.innerText = moment(endTime)
-                .minute(Math.round(moment(endTime).minute() / 30) * 30)
-                .second(0)
-                .format('LT')
-                startAndEndTime.appendChild(endTimeElt)
-                
-                // Location
-                let locationElt
-                
-                if(isVirtual) {
-                    locationElt = document.createElement("span")
-                    locationElt.innerText = "Online"
-                } else {
-                    locationElt = document.createElement("p")
-                    address.split(",").forEach(line=>{
-                        const addressLine = document.createElement("span")
-                        addressLine.innerText = line
-                        locationElt.appendChild(addressLine)
-                    })
-                }
-                locationElt.classList.add("location")
-                metaElt.appendChild(startAndEndTime)
+                    // Checkbox
+                    const selectLabelElt = document.createElement("label");
+                    const checkboxElt = document.createElement("input");
+                    checkboxElt.type = "checkbox";
+                    selectLabelElt.setAttribute("for", eventKey);
+                    checkboxElt.id = eventKey;
+                    checkboxElt.checked = selected;
+                    eventElt.classList.toggle("selected", selected);
+                    selectLabelElt.appendChild(checkboxElt);
+                    eventElt.appendChild(selectLabelElt);
 
-                // Fill up the info
-                metaElt.appendChild(locationElt)
-                infoElt.appendChild(metaElt)
+                    // Date
+                    const dateElt = document.createElement("time");
+                    dateElt.dateTime = startTime.slice(0, 10);
+                    const dayElt = document.createElement("span");
+                    const weekDayElt = document.createElement("span");
+                    dayElt.innerText = day;
+                    weekDayElt.innerText = weekday.slice(0, 3);
+                    dateElt.appendChild(weekDayElt);
+                    dateElt.appendChild(dayElt);
+                    eventElt.appendChild(dateElt);
 
-                // Fill up the event
-                eventElt.appendChild(infoElt)
-                // Fill up the month
-                monthElt.appendChild(eventElt)
-            })
-            
+                    // Info
+                    const infoElt = document.createElement("div");
+                    infoElt.classList.add("info");
+
+                    // Title
+                    const titleElt = document.createElement("h5");
+                    titleElt.innerText = name;
+                    infoElt.appendChild(titleElt);
+
+                    // Start and end time
+                    const metaElt = document.createElement("div");
+                    metaElt.classList.add("meta");
+                    const startAndEndTime = document.createElement("span");
+                    startAndEndTime.classList.add("startAndEndTime");
+
+                    // Start time
+                    const startTimeElt = document.createElement("span");
+                    startTimeElt.innerText = moment(startTime)
+                        .minute(Math.round(moment(startTime).minute() / 30) * 30)
+                        .second(0)
+                        .format('LT');
+                    startAndEndTime.appendChild(startTimeElt);
+
+                    // End time
+                    const endTimeElt = document.createElement("span");
+                    endTimeElt.innerText = moment(endTime)
+                        .minute(Math.round(moment(endTime).minute() / 30) * 30)
+                        .second(0)
+                        .format('LT');
+                    startAndEndTime.appendChild(endTimeElt);
+
+                    // Location
+                    let locationElt;
+                    if (isVirtual) {
+                        locationElt = document.createElement("span");
+                        locationElt.innerText = "Online";
+                    } else {
+                        locationElt = document.createElement("p");
+                        address.split(",").forEach(line => {
+                            const addressLine = document.createElement("span");
+                            addressLine.innerText = line;
+                            locationElt.appendChild(addressLine);
+                        });
+                    }
+                    locationElt.classList.add("location");
+                    metaElt.appendChild(startAndEndTime);
+
+                    // Fill up the info
+                    metaElt.appendChild(locationElt);
+                    infoElt.appendChild(metaElt);
+
+                    // Fill up the event
+                    eventElt.appendChild(infoElt);
+                    // Fill up the month
+                    monthElt.appendChild(eventElt);
+                });
+
             // Fill up the year
-            yearElt.appendChild(monthElt)
-            
-        })
-        
+            yearElt.appendChild(monthElt);
+        });
+
         // Fill up the event list
-        eventListElt.appendChild(yearElt)
-    })
-    
-}
+        eventListElt.appendChild(yearElt);
+    });
+};
 
 const handleEventClick = e =>{
     const keyAttribute = "data-event-key"
