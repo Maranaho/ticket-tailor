@@ -8,14 +8,16 @@
     <link rel="stylesheet" href="./styles/styles.css"/>
 </head>
 <body>
-    <main>
+    <main data-target="blank">
         <section>
             
             <!-- Topbar -->
             <nav>
                 <img
+                    class="ttLogo"
                     src="./assets/svg/tt-logo.svg"
                     alt="Ticket Tailor"
+                    width="20"
                 />
                 <aside>
                     <a
@@ -70,6 +72,18 @@
                     <span>Welcome,</span>
                     <span class="nickname">Naho</span>
                 </h1>
+                <div
+                    class="searchEvents"
+                    data-target
+                >
+                    <input
+                        id="searchEvents"
+                        placeholder="Find and select your events..."
+                    />
+                    <button id="searchEventsbTN">
+                        <img width="15" src="./assets/svg/chevron.svg"/>
+                    </button>
+                </div>
             </header>
 
             

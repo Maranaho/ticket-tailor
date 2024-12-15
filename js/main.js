@@ -5,7 +5,11 @@ import {
 } from "./utils.js"
 
 // const threshold = 100
+const transitionDuration = 700
 const eventListElt = document.getElementById("eventList")
+const searchEventsElt = document.getElementById("searchEvents")
+const searchEventsbTNElt = document.getElementById("searchEventsbTN")
+const mainElt = document.getElementsByTagName("main")[0]
 let croppedEvents = null
 
 const handleData = data =>{
@@ -206,15 +210,44 @@ const handleEventClick = e =>{
         const eventKey = eventElt.getAttribute(keyAttribute)
         const path = eventKey.split("/")
         croppedEvents[path[0]][path[1]][path[2]].selected ^= true
-
         populateList()
     }
     
 }
 
+let timeout
+const handleMainPageClick = e =>{
+    const hitAttribute = "data-target"
+    const hitTarget = e.target.closest(`[${hitAttribute}]`)
+    if(hitTarget){
+        if(hitTarget.getAttribute(hitAttribute) === "blank"){
+            eventListElt.classList.remove("show")
+            timeout = setTimeout(()=>{
+                eventListElt.classList.add("hidden")
+            },transitionDuration)
+        }
+    }
+}
+
+const showDropdown = ()=>{
+    clearTimeout(timeout)
+    eventListElt.classList.remove("hidden")
+    eventListElt.classList.add("show")
+}
+
 const init = ()=>{
     populateList()
     eventListElt.addEventListener("click",handleEventClick)
+    mainElt.addEventListener("click",handleMainPageClick)
+    searchEventsElt.addEventListener("click",showDropdown)
+    searchEventsbTNElt.addEventListener("click",showDropdown)
+    
+    eventListElt.classList.add("hidden")
 }
 
 getData()
+
+// Cleanup
+window.addEventListener("beforeunload", () => {
+    clearTimeout(timeout)
+})
