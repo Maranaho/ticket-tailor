@@ -212,12 +212,14 @@ header {
         justify-content: center;
         align-items: center;
         position: relative;
+        cursor: pointer;
         &:before,
         &:after {
             content: "";
             display: block;
             width: 30px;
             height: 30px;
+            cursor: pointer;
         }
         &:before {
             position: absolute;
@@ -238,6 +240,7 @@ header {
             left: calc(50% - 19px);
             top: calc(50% - 19px);
             opacity: 0;
+            z-index: -1;
         }
     }
 
