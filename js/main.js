@@ -8,6 +8,7 @@ import {
 const transitionDuration = 700
 const eventListElt = document.getElementById("eventList")
 const searchEventsElt = document.getElementById("searchEvents")
+const submitBtnElt = document.getElementById("submitBtn")
 const searchEventsbTNElt = document.getElementById("searchEventsbTN")
 const mainElt = document.getElementsByTagName("main")[0]
 let croppedEvents = null
@@ -203,6 +204,23 @@ const populateList = () => {
     });
 };
 
+let selectedEvents = {}
+const updateKeysList = event =>{
+    const { unformattedKey, name } = event
+    const key = unformattedKey.replace("_","").split("/").join("")
+    
+    if(!selectedEvents.hasOwnProperty(key)) selectedEvents[key] = name
+    else delete selectedEvents[key]
+    
+}
+
+const checkIfAnyAreSelected = ()=>{
+    const atLeastOneSelection = Object.keys(selectedEvents).length    
+    const btnIsDisabled = submitBtnElt.disabled
+    if(atLeastOneSelection && btnIsDisabled) submitBtnElt.removeAttribute("disabled")
+    if(!atLeastOneSelection && !btnIsDisabled) submitBtnElt.setAttribute("disabled", "true")
+}
+
 const handleEventClick = e =>{
     const keyAttribute = "data-event-key"
     const eventElt = e.target.closest(`[${keyAttribute}]`)
@@ -210,7 +228,10 @@ const handleEventClick = e =>{
         const eventKey = eventElt.getAttribute(keyAttribute)
         const path = eventKey.split("/")
         croppedEvents[path[0]][path[1]][path[2]].selected ^= true
+        const name = croppedEvents[path[0]][path[1]][path[2]].name
         populateList()
+        updateKeysList({unformattedKey:eventKey,name})
+        checkIfAnyAreSelected()
     }
     
 }
@@ -235,13 +256,49 @@ const showDropdown = ()=>{
     eventListElt.classList.add("show")
 }
 
+
+const unselectAllEvents = ()=>{
+    submitBtnElt.setAttribute("disabled", "true")
+    getData()
+    selectedEvents = {}
+}
+
+const postEvents = () => {
+    const placeholderUrl = "https://jsonplaceholder.typicode.com/posts"
+    const data = {
+        ids: Object.keys(selectedEvents).join(",")
+    }
+
+    fetch(placeholderUrl, { 
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json" 
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(() => {
+        const nbOfEvents = Object.keys(selectedEvents).length
+        const successMessage = `Success!\n You posted ${nbOfEvents} events:\n ${String(Object.keys(selectedEvents))}`
+        unselectAllEvents()
+        alert(successMessage);
+    })
+    .catch(error => {
+        console.error("Error:", error)
+    })
+}
+
+const handleSubmit = ()=>{
+    postEvents()
+}
+
 const init = ()=>{
     populateList()
     eventListElt.addEventListener("click",handleEventClick)
     mainElt.addEventListener("click",handleMainPageClick)
     searchEventsElt.addEventListener("click",showDropdown)
     searchEventsbTNElt.addEventListener("click",showDropdown)
-    
+    submitBtnElt.addEventListener("click",handleSubmit)
     eventListElt.classList.add("hidden")
 }
 
