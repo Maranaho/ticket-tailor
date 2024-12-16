@@ -8,15 +8,25 @@ import {
 const transitionDuration = 700
 const eventListElt = document.getElementById("eventList")
 const searchEventsElt = document.getElementById("searchEvents")
+const selectionElt = document.getElementById("selection")
+const avatarElt = document.getElementById("avatar")
 const submitBtnElt = document.getElementById("submitBtn")
+const fullNameElt = document.getElementById("fullName")
 const searchEventsbTNElt = document.getElementById("searchEventsbTN")
+const resultsLengthEltCtn = document.getElementsByClassName("resultsLength")[0]
+const nicknameElts = document.getElementsByClassName("nickname")
+const resultsLengthElt = document.getElementById("resultsLength")
 const mainElt = document.getElementsByTagName("main")[0]
-let croppedEvents = null
+let fetchedEvents = null
+let copyOfFlatData = null
+let filteredEvents = {}
+let flatFilteredEvents = {}
+let searchValue = ""
 
 const handleData = data =>{
     const formattedEvents = Object.keys(data).reduce((acc,eventKey)=>{
 
-        const event = data[eventKey]
+        const event = data[eventKey]        
         const startTime = event.start_time
         const endTime = event.end_time
         const date = new Date(startTime)
@@ -32,7 +42,7 @@ const handleData = data =>{
             name:event.name,
             startTime,
             endTime,
-            selected:false,
+            selected:event.selected,
             isVirtual:event.virtual
         }
 
@@ -51,7 +61,8 @@ const getData = async()=> {
         const res = await fetch('../events.json')
         if (!res.ok) throw new Error("Ohoh")
         const initialData = await res.json()
-        croppedEvents = handleData(initialData)
+        if(!copyOfFlatData) copyOfFlatData = {...initialData}
+        fetchedEvents = handleData(initialData)
         init()
     } catch (error) {
         console.error('Error loading the JSON file:', error)
@@ -60,12 +71,12 @@ const getData = async()=> {
 const populateList = () => {
     // Refresh the list
     eventListElt.innerHTML = ""
-
     // Populate the list
-    Object.keys(croppedEvents).forEach(yearKey => {
+    
+    Object.keys(filteredEvents).forEach(yearKey => {
 
         // Year level
-        const year = croppedEvents[yearKey];
+        const year = filteredEvents[yearKey];
         const yearElt = document.createElement("article");
         yearElt.classList.add("Year");
 
@@ -225,10 +236,15 @@ const handleEventClick = e =>{
     const keyAttribute = "data-event-key"
     const eventElt = e.target.closest(`[${keyAttribute}]`)
     if(eventElt){
+        
         const eventKey = eventElt.getAttribute(keyAttribute)
+        
         const path = eventKey.split("/")
-        croppedEvents[path[0]][path[1]][path[2]].selected ^= true
-        const name = croppedEvents[path[0]][path[1]][path[2]].name
+        
+        copyOfFlatData[path[2]].selected ^= true
+        filteredEvents[path[0]][path[1]][path[2]].selected ^= true
+        const name = filteredEvents[path[0]][path[1]][path[2]].name
+        
         populateList()
         updateKeysList({unformattedKey:eventKey,name})
         checkIfAnyAreSelected()
@@ -242,17 +258,23 @@ const handleMainPageClick = e =>{
     const hitTarget = e.target.closest(`[${hitAttribute}]`)
     if(hitTarget){
         if(hitTarget.getAttribute(hitAttribute) === "blank"){
+            resultsLengthEltCtn.classList.remove("show")
             eventListElt.classList.remove("show")
             timeout = setTimeout(()=>{
                 eventListElt.classList.add("hidden")
             },transitionDuration)
         }
     }
+
+    const selection = Object.keys(selectedEvents).length
+    selectionElt.innerText = `${selection} selected.`
+
 }
 
 const showDropdown = ()=>{
     clearTimeout(timeout)
     eventListElt.classList.remove("hidden")
+    resultsLengthEltCtn.classList.add("show")
     eventListElt.classList.add("show")
 }
 
@@ -261,6 +283,11 @@ const unselectAllEvents = ()=>{
     submitBtnElt.setAttribute("disabled", "true")
     getData()
     selectedEvents = {}
+    fetchedEvents = null
+    copyOfFlatData = null
+    filteredEvents = {}
+    flatFilteredEvents = {}
+    searchValue = ""
 }
 
 const postEvents = () => {
@@ -289,19 +316,76 @@ const postEvents = () => {
 }
 
 const handleSubmit = ()=>{
+    searchValue = ""
+    searchEventsElt.value = ""
     postEvents()
 }
 
-const init = ()=>{
+const filterEvents = () =>{
+
+    const loCaseValue = searchValue.toLowerCase()
+    flatFilteredEvents = Object.keys(copyOfFlatData).reduce((acc,eventKey)=>{
+        const loCaseName = copyOfFlatData[eventKey].name.toLowerCase()
+        
+        const eventCanGoThru = loCaseName.includes(loCaseValue) || loCaseValue === ""        
+        if(eventCanGoThru) acc[eventKey] = copyOfFlatData[eventKey]
+        return acc
+    },{})
+    
+    filteredEvents = handleData(flatFilteredEvents)
     populateList()
-    eventListElt.addEventListener("click",handleEventClick)
-    mainElt.addEventListener("click",handleMainPageClick)
-    searchEventsElt.addEventListener("click",showDropdown)
-    searchEventsbTNElt.addEventListener("click",showDropdown)
-    submitBtnElt.addEventListener("click",handleSubmit)
-    eventListElt.classList.add("hidden")
 }
 
+const handleChange = e =>{
+    const val = e.target.value
+    searchValue = val
+    filterEvents()
+    checkIfNoResults()
+}
+
+const handleFocus = e =>{
+    e.target.select()
+}
+
+const checkIfNoResults = ()=>{
+    const nb = Object.keys(flatFilteredEvents).length
+    const nbOfResults = nb === 200 ? 234 : nb
+    const selection = Object.keys(selectedEvents).length
+    const eventsCountMessage = `${nbOfResults} event${nbOfResults > 1 ?"s":""}`
+    resultsLengthElt.innerText = nb > 0 ? eventsCountMessage : `Nothing here ${selection > 0 ?"but":"and"},`
+
+    eventListElt.classList.toggle("empty",nb === 0)
+}
+
+const getName = ()=>{
+    const url = window.location.href;
+
+    const urlParams = new URLSearchParams(window.location.search);
+
+    if (urlParams.has('nickname') && urlParams.has('fullname')) {
+        const nickname = urlParams.get('nickname');
+        const fullname = urlParams.get('fullname');
+        fullNameElt.innerText = fullname.split("_").join(" ")
+        Array.from(nicknameElts).forEach(elt=>elt.innerText = nickname)
+        avatar.innerText = nickname[0]
+    }
+}
+
+const init = ()=>{
+    filterEvents()
+    populateList()
+    getName()
+}
+
+
+eventListElt.addEventListener("click",handleEventClick)
+mainElt.addEventListener("click",handleMainPageClick)
+searchEventsElt.addEventListener("click",showDropdown)
+searchEventsElt.addEventListener("input",handleChange)
+searchEventsElt.addEventListener("focus",handleFocus)
+searchEventsbTNElt.addEventListener("click",showDropdown)
+submitBtnElt.addEventListener("click",handleSubmit)
+eventListElt.classList.add("hidden")
 getData()
 
 // Cleanup

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./styles/styles.css"/>
 </head>
 <body>
-    <main class="index">
+    <main data-target="blank">
         <section>
             
             <!-- Topbar -->
@@ -35,7 +35,7 @@
                     <a
                         target="_blank"
                         class="links"
-                        href="https://www.figma.com/design/LdKSPC2pBNLvaUWFQYpyPS/Ticket-Tailor?node-id=1-21&t=LVAcQM7pwUzGZNp3-1"
+                        href="https://www.figma.com/design/LdKSPC2pBNLvaUWFQYpyPS/Ticket-Tailor?node-id=30-1158&t=jkWXMY1YzsZ9XCmX-0"
                     >
                         <img
                             src="./assets/svg/figma.svg"
@@ -56,54 +56,72 @@
                         />
                         <span>Walk through</span>
                     </a>
+                    <div class="account">
+                        <div class="user">
+                            <span class="nickname">Naho</span>
+                            <span id="fullName">Maranaho N'Guessan</span>
+                        </div>
+                        <span id="avatar">N</span>
+                    </div>
                 </aside>
             </nav>
-           
+
+            <!-- Header -->
+            <header>
+                <h1>
+                    <span>Welcome,</span>
+                    <span class="nickname">Naho</span>
+                </h1>
+                <div
+                    class="searchEvents"
+                    data-target
+                >
+                    <span class="resultsLength">
+                        <span id="resultsLength">234 events, </span>
+                        <span id="selection"></span>
+                    </span>
+                    <input
+                        id="searchEvents"
+                        placeholder="Find and select your events..."
+                    />
+                    <button id="searchEventsbTN">
+                        <img width="15" src="./assets/svg/chevron.svg"/>
+                    </button>
+                </div>
+            </header>
             
-            
-            <section class="formCtn">
-                <h1>Sign in</h1>
-                <form id="form"> 
-                    <p>To make the experience more immersive please tell us your name. It won’t be stored anywhere.</p>
-                     <section>
-                        <label for="firstName">
-                            <span>Full first name</span>
-                            <input
-                                id="firstName"
-                                placeholder="Your full first name..."    
-                            />
-                         </label>
-                         <label for="lastName">
-                            <span>Last name</span>
-                            <input
-                                id="lastName"
-                                placeholder="Your last name..."    
-                            />
-                         </label>
-                         <label for="nickname">
-                            <span>Nickname</span>
-                            <input
-                                id="nickname"
-                                placeholder="What you like to be called..."    
-                            />
-                         </label>
-                         <div class="btnCtn">
-                            <button id="skip" class="btn secondary">Skip</button>
-                            <button id="signin" class="btn">Sign in</button>
-                         </div>
-                     </section>
-                </form>
+            <!-- Event list -->
+            <section id="eventList">
+                <span class="loading">Loading...</span>
             </section>
-            
-            
+
         </section>
-        
+
+        <footer>
+            <button
+                id="submitBtn"
+                class="btn"
+                disabled
+            >
+                <span>Submit</span>
+                <img
+                    src="./assets/svg/whitecheck.svg"
+                    alt="Github icon"
+                    width="18"
+                />
+            </button>
+        </footer>
     </main>
+
+
+
+    <!-- Moment JS to handle dates -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 
     <!-- Main code -->
     <script
         type="module"
-        src="./js/signin.js">
+        src="./js/main.js">
     </script>
 </body>
 </html>
